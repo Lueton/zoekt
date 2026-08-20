@@ -316,7 +316,7 @@ document.onkeydown=function(e){
       <tbody>
 	{{range .Repos -}}
 	<tr>
-	  <td>{{if .URL}}<a href="{{.URL}}">{{end}}{{.Name}}{{if .URL}}</a>{{end}}{{if index .Metadata "namespace"}}<span class="label label-info" style="font-size:0.75em;margin-left:4px">{{index .Metadata "namespace"}}</span>{{end}}</td>
+	  <td>{{if .URL}}<a href="{{.URL}}">{{end}}{{.Name}}{{if .URL}}</a>{{end}}</td>
 	  <td><small>{{.IndexTime.Format "Jan 02, 2006 15:04"}}</small></td>
 	  <td style="vertical-align: middle;">
 	    {{- range .Branches -}}
